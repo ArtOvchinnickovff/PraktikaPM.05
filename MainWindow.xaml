@@ -1,0 +1,28 @@
+﻿<Window x:Class="SportShop.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SportShop"
+        mc:Ignorable="d"
+        Title="Спортивные товары" Height="450" Width="800">
+    <Grid Margin="0,0,0,-16">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="White"/>
+                <GradientStop Color="White" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label x:Name="Label_Login" Content="Логин" HorizontalAlignment="Left" Height="43" Margin="464,68,0,0" VerticalAlignment="Top" Width="192" FontFamily="Comic Sans MS" FontSize="20" Foreground="Black" Background="White"/>
+        <Label x:Name="Label_Password" Content="Пароль" HorizontalAlignment="Left" Height="43" Margin="464,182,0,0" VerticalAlignment="Top" Width="192" FontFamily="Comic Sans MS" FontSize="20" Foreground="Black" Background="White"/>
+        <TextBox x:Name="Login" HorizontalAlignment="Left" Height="46" Margin="464,116,0,0" TextWrapping="Wrap" Text="Введите логин" VerticalAlignment="Top" Width="232" FontFamily="Comic Sans MS" FontSize="18" TextChanged="Login_TextChanged" GotFocus="Login_GotFocus" LostFocus="Login_LostFocus"/>
+        <TextBox x:Name="Password" HorizontalAlignment="Left" Height="46" Margin="464,230,0,0" TextWrapping="Wrap" Text="Введите пароль" VerticalAlignment="Top" Width="232" FontFamily="Comic Sans MS" FontSize="18" TextChanged="Login_TextChanged" GotFocus="Password_GotFocus" LostFocus="Password_LostFocus"/>
+        <Button x:Name="Login_Button" Content="Войти" HorizontalAlignment="Left" Margin="484,309,0,0" VerticalAlignment="Top" Height="37" Width="192" FontSize="14" Click="Login_Button_Click" BorderBrush="White" Background="#FF49BB10" Foreground="White"/>
+        <Button x:Name="Register_Button" Content="Зарегистрироваться" HorizontalAlignment="Left" Margin="484,365,0,0" VerticalAlignment="Top" Height="37" Width="192" FontSize="14" Click="Register_Button_Click" Background="#FF49BB10" Foreground="White" BorderBrush="White"/>
+        <Label Content="Авторизация" HorizontalAlignment="Left" Height="58" Margin="424,10,0,0" VerticalAlignment="Top" Width="407" FontFamily="Comic Sans MS" FontSize="36"/>
+        <Border BorderBrush="#FF77DD77" BorderThickness="1" HorizontalAlignment="Left" Height="450" VerticalAlignment="Center" Width="400" Background="#FF77DD77">
+            <Image HorizontalAlignment="Left" Height="262" Margin="68,0,0,0" VerticalAlignment="Center" Width="282" Source="/logo.png"/>
+        </Border>
+
+    </Grid>
+</Window>
